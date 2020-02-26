@@ -7,7 +7,7 @@
 
 [//]: # (END OF BADGES SECTION)
 
-# Welcome To `fastpages`
+# Welcome To `blog`
 
 > An easy to use blogging platform, with support for Jupyter notebooks, Word docs, and Markdown.
 
