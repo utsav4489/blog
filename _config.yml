@@ -6,11 +6,11 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
-github_username: fastai
+title: Blog
+description: Our blog
+github_username: nipunbatra
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "fastpages"
+# github_repo: "nipunbatra"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 url: "https://nipunbatra.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -18,7 +18,7 @@ baseurl: "/blog" # the subpath of your site, e.g. "/blog".  WARNING: if you are 
 
 # Email and twitter are optional:
 email: 
-twitter_username: "fastdotai"
+twitter_username: "nipun_batra"
 
 # Set this to true to get LaTeX math equation support
 use_math: true
