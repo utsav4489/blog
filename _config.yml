@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Sustainability Lab Blog
-description: Our blog
+description: This blog contains mostly articles about machine learning, sensor networks, academia
 github_username: nipunbatra
 # you can comment the below line out if your repo name is not different than your baseurl
 # github_repo: "nipunbatra"
