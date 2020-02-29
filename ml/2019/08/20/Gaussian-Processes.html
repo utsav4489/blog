@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>GP | Blog</title>
+<title>Gaussian Processes | Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="GP" />
-<meta name="author" content="Jeremy Howard & Hamel Husain" />
+<meta property="og:title" content="Gaussian Processes" />
+<meta name="author" content="Nipun Batra" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with extra features for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with extra features for Jupyter Notebooks." />
-<link rel="canonical" href="https://nipunbatra.github.io/blog/fastpages/jupyter/2019/08/20/Gaussian-Processes.html" />
-<meta property="og:url" content="https://nipunbatra.github.io/blog/fastpages/jupyter/2019/08/20/Gaussian-Processes.html" />
+<meta name="description" content="A programming introduction to Gaussian Processes." />
+<meta property="og:description" content="A programming introduction to Gaussian Processes." />
+<link rel="canonical" href="https://nipunbatra.github.io/blog/ml/2019/08/20/Gaussian-Processes.html" />
+<meta property="og:url" content="https://nipunbatra.github.io/blog/ml/2019/08/20/Gaussian-Processes.html" />
 <meta property="og:site_name" content="Blog" />
-<meta property="og:image" content="https://nipunbatra.github.io/blog/images/diagram.png" />
+<meta property="og:image" content="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/20d-conditional-main.gif" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-20T00:00:00-05:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Jeremy Howard & Hamel Husain"},"description":"An easy to use blogging platform with extra features for Jupyter Notebooks.","@type":"BlogPosting","headline":"GP","dateModified":"2019-08-20T00:00:00-05:00","url":"https://nipunbatra.github.io/blog/fastpages/jupyter/2019/08/20/Gaussian-Processes.html","datePublished":"2019-08-20T00:00:00-05:00","image":"https://nipunbatra.github.io/blog/images/diagram.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nipunbatra.github.io/blog/fastpages/jupyter/2019/08/20/Gaussian-Processes.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Nipun Batra"},"description":"A programming introduction to Gaussian Processes.","@type":"BlogPosting","headline":"Gaussian Processes","dateModified":"2019-08-20T00:00:00-05:00","url":"https://nipunbatra.github.io/blog/ml/2019/08/20/Gaussian-Processes.html","datePublished":"2019-08-20T00:00:00-05:00","image":"https://nipunbatra.github.io/blog/images/copied_from_nb/GP/20d-conditional-main.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://nipunbatra.github.io/blog/ml/2019/08/20/Gaussian-Processes.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -92,11 +92,11 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">GP</h1><p class="page-description">An easy to use blogging platform with extra features for Jupyter Notebooks.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-08-20T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Gaussian Processes</h1><p class="page-description">A programming introduction to Gaussian Processes.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-08-20T00:00:00-05:00" itemprop="datePublished">
         Aug 20, 2019
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">Jeremy Howard & Hamel Husain</span></span>
+            <span class="p-author h-card" itemprop="name">Nipun Batra</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -107,10 +107,7 @@
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/blog/categories/#fastpages">fastpages</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
+        <a class="category-tags-link" href="/blog/categories/#ML">ML</a>
         
       
       </p>
@@ -195,7 +192,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/20d-conditional-main.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/20d-conditional-main.gif" alt=""></p>
 
 </div>
 </div>
@@ -1227,7 +1224,7 @@ $$X_2 \sim \mathcal{N}(\mu_2, b)$$</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/0.7/0.jpg" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/0.7/0.jpg" alt=""></p>
 
 </div>
 </div>
@@ -1355,7 +1352,7 @@ $$X_2 \sim \mathcal{N}(\mu_2, b)$$</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/sigma-0-1.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/sigma-0-1.gif" alt=""></p>
 
 </div>
 </div>
@@ -1406,7 +1403,7 @@ $$X_2 \sim \mathcal{N}(\mu_2, b)$$</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/sigma-0-7.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/sigma-0-7.gif" alt=""></p>
 
 </div>
 </div>
@@ -1566,7 +1563,7 @@ $$<p>The conditional expectation of $X_2$ given $X_1$ is: $\operatorname{E}(X_2 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/conditional-sigma-0-1.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/conditional-sigma-0-1.gif" alt=""></p>
 
 </div>
 </div>
@@ -1617,7 +1614,7 @@ $$<p>The conditional expectation of $X_2$ given $X_1$ is: $\operatorname{E}(X_2 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/conditional-sigma-0-7.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/conditional-sigma-0-7.gif" alt=""></p>
 
 </div>
 </div>
@@ -1766,7 +1763,7 @@ $$<p>The conditional expectation of $X_2$ given $X_1$ is: $\operatorname{E}(X_2 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/5d.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/5d.gif" alt=""></p>
 
 </div>
 </div>
@@ -2328,7 +2325,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/5d-conditional-1.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/5d-conditional-1.gif" alt=""></p>
 
 </div>
 </div>
@@ -2681,7 +2678,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/20d.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/20d.gif" alt=""></p>
 
 </div>
 </div>
@@ -3163,7 +3160,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/20d-conditional.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/20d-conditional.gif" alt=""></p>
 
 </div>
 </div>
@@ -3760,7 +3757,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/GP/20d-conditional-main.gif" alt=""></p>
+<p><img src="https://nipunbatra.github.io/blog/images/copied_from_nb/GP/20d-conditional-main.gif" alt=""></p>
 
 </div>
 </div>
@@ -4426,7 +4423,7 @@ $$<p>We can now rewrite the function as follows:</p>
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/blog/fastpages/jupyter/2019/08/20/Gaussian-Processes.html" hidden></a>
+</script><a class="u-url" href="/blog/ml/2019/08/20/Gaussian-Processes.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
