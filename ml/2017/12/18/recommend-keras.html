@@ -129,21 +129,21 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h3"><a href="#Task">Task¶</a></li>
-<li class="toc-entry toc-h3"><a href="#Peak-into-the-dataset">Peak into the dataset¶</a></li>
-<li class="toc-entry toc-h3"><a href="#Train-test-split">Train test split¶</a></li>
-<li class="toc-entry toc-h3"><a href="#Matrix-factorisation">Matrix factorisation¶</a></li>
-<li class="toc-entry toc-h3"><a href="#Matrix-factorisation-in-Keras">Matrix factorisation in Keras¶</a>
+<li class="toc-entry toc-h3"><a href="#Task">Task </a></li>
+<li class="toc-entry toc-h3"><a href="#Peak-into-the-dataset">Peak into the dataset </a></li>
+<li class="toc-entry toc-h3"><a href="#Train-test-split">Train test split </a></li>
+<li class="toc-entry toc-h3"><a href="#Matrix-factorisation">Matrix factorisation </a></li>
+<li class="toc-entry toc-h3"><a href="#Matrix-factorisation-in-Keras">Matrix factorisation in Keras </a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#Train-error-v/s-epoch-number">Train error v/s epoch number¶</a></li>
-<li class="toc-entry toc-h4"><a href="#Prediction-error">Prediction error¶</a></li>
-<li class="toc-entry toc-h4"><a href="#Extracting-the-learnt-embeddings">Extracting the learnt embeddings¶</a></li>
+<li class="toc-entry toc-h4"><a href="#Train-error-v/s-epoch-number">Train error v/s epoch number </a></li>
+<li class="toc-entry toc-h4"><a href="#Prediction-error">Prediction error </a></li>
+<li class="toc-entry toc-h4"><a href="#Extracting-the-learnt-embeddings">Extracting the learnt embeddings </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h3"><a href="#Non-negative-Matrix-factorisation-(NNMF)-in-Keras">Non-negative Matrix factorisation (NNMF) in Keras¶</a></li>
-<li class="toc-entry toc-h3"><a href="#Neural-networks-for-recommendation">Neural networks for recommendation¶</a>
+<li class="toc-entry toc-h3"><a href="#Non-negative-Matrix-factorisation-(NNMF)-in-Keras">Non-negative Matrix factorisation (NNMF) in Keras </a></li>
+<li class="toc-entry toc-h3"><a href="#Neural-networks-for-recommendation">Neural networks for recommendation </a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#Prediction-performance-of-Neural-Network-based-recommender-system">Prediction performance of Neural Network based recommender system¶</a></li>
+<li class="toc-entry toc-h4"><a href="#Prediction-performance-of-Neural-Network-based-recommender-system">Prediction performance of Neural Network based recommender system </a></li>
 </ul>
 </li>
 </ul><!--
@@ -181,7 +181,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Task">
-<a class="anchor" href="#Task" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Task</strong><a class="anchor-link" href="#Task">¶</a>
+<a class="anchor" href="#Task" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Task</strong><a class="anchor-link" href="#Task"> </a>
 </h3>
 <p>Given this set of ratings, can we recommend the next set of movies to a user? This would translate to: for every user, estimating the ratings for all the movies that (s)he hasn't watched and maybe recommend the top-k movies by the esimtated ratings!</p>
 
@@ -192,7 +192,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Peak-into-the-dataset">
-<a class="anchor" href="#Peak-into-the-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Peak into the dataset<a class="anchor-link" href="#Peak-into-the-dataset">¶</a>
+<a class="anchor" href="#Peak-into-the-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Peak into the dataset<a class="anchor-link" href="#Peak-into-the-dataset"> </a>
 </h3>
 </div>
 </div>
@@ -496,7 +496,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Train-test-split">
-<a class="anchor" href="#Train-test-split" aria-hidden="true"><span class="octicon octicon-link"></span></a>Train test split<a class="anchor-link" href="#Train-test-split">¶</a>
+<a class="anchor" href="#Train-test-split" aria-hidden="true"><span class="octicon octicon-link"></span></a>Train test split<a class="anchor-link" href="#Train-test-split"> </a>
 </h3>
 <p>We'll now split our dataset of 100k ratings into train (containing 80k ratings) and test (containing 20k ratings). Given the train set, we'd like to accurately estimate the ratings in the test set.</p>
 
@@ -713,7 +713,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Matrix-factorisation">
-<a class="anchor" href="#Matrix-factorisation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matrix factorisation<a class="anchor-link" href="#Matrix-factorisation">¶</a>
+<a class="anchor" href="#Matrix-factorisation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matrix factorisation<a class="anchor-link" href="#Matrix-factorisation"> </a>
 </h3>
 <p>One popular recommender systems approach is called Matrix Factorisation. It works on the principle that we can learn a low-dimensional representation (embedding) of user and movie. For example, for each movie, we can have how much action it has, how long it is, and so on. For each user, we can encode how much they like action, or how much they like long movies, etc. Thus, we can combine the user and the movie embeddings to estimate the ratings on unseen movies. This approach can also be viewed as: given a matrix (A [M X N]) containing users and movies, we want to estimate low dimensional matrices (W [M X k] and H [M X k]), such that: $A \approx W.H^T$</p>
 
@@ -724,7 +724,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Matrix-factorisation-in-Keras">
-<a class="anchor" href="#Matrix-factorisation-in-Keras" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matrix factorisation in Keras<a class="anchor-link" href="#Matrix-factorisation-in-Keras">¶</a>
+<a class="anchor" href="#Matrix-factorisation-in-Keras" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matrix factorisation in Keras<a class="anchor-link" href="#Matrix-factorisation-in-Keras"> </a>
 </h3>
 <p>We'll now write some code to solve the recommendation problem by matrix factorisation in Keras. We're trying to learn two low-dimensional embeddings of users and items.</p>
 
@@ -1058,7 +1058,7 @@ ________________________________________________________________________________
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Train-error-v/s-epoch-number">
-<a class="anchor" href="#Train-error-v/s-epoch-number" aria-hidden="true"><span class="octicon octicon-link"></span></a>Train error v/s epoch number<a class="anchor-link" href="#Train-error-v/s-epoch-number">¶</a>
+<a class="anchor" href="#Train-error-v/s-epoch-number" aria-hidden="true"><span class="octicon octicon-link"></span></a>Train error v/s epoch number<a class="anchor-link" href="#Train-error-v/s-epoch-number"> </a>
 </h4>
 </div>
 </div>
@@ -1120,7 +1120,7 @@ ________________________________________________________________________________
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Prediction-error">
-<a class="anchor" href="#Prediction-error" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prediction error<a class="anchor-link" href="#Prediction-error">¶</a>
+<a class="anchor" href="#Prediction-error" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prediction error<a class="anchor-link" href="#Prediction-error"> </a>
 </h4>
 </div>
 </div>
@@ -1197,7 +1197,7 @@ ________________________________________________________________________________
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Extracting-the-learnt-embeddings">
-<a class="anchor" href="#Extracting-the-learnt-embeddings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extracting the learnt embeddings<a class="anchor-link" href="#Extracting-the-learnt-embeddings">¶</a>
+<a class="anchor" href="#Extracting-the-learnt-embeddings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extracting the learnt embeddings<a class="anchor-link" href="#Extracting-the-learnt-embeddings"> </a>
 </h4>
 </div>
 </div>
@@ -1436,7 +1436,7 @@ ________________________________________________________________________________
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Non-negative-Matrix-factorisation-(NNMF)-in-Keras">
-<a class="anchor" href="#Non-negative-Matrix-factorisation-(NNMF)-in-Keras" aria-hidden="true"><span class="octicon octicon-link"></span></a>Non-negative Matrix factorisation (NNMF) in Keras<a class="anchor-link" href="#Non-negative-Matrix-factorisation-(NNMF)-in-Keras">¶</a>
+<a class="anchor" href="#Non-negative-Matrix-factorisation-(NNMF)-in-Keras" aria-hidden="true"><span class="octicon octicon-link"></span></a>Non-negative Matrix factorisation (NNMF) in Keras<a class="anchor-link" href="#Non-negative-Matrix-factorisation-(NNMF)-in-Keras"> </a>
 </h3>
 </div>
 </div>
@@ -1620,7 +1620,7 @@ ________________________________________________________________________________
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Neural-networks-for-recommendation">
-<a class="anchor" href="#Neural-networks-for-recommendation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Neural networks for recommendation<a class="anchor-link" href="#Neural-networks-for-recommendation">¶</a>
+<a class="anchor" href="#Neural-networks-for-recommendation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Neural networks for recommendation<a class="anchor-link" href="#Neural-networks-for-recommendation"> </a>
 </h3>
 <p>We'll now create a simple neural network for recommendation, or for estimating rating! This model is very similar to the earlier matrix factorisation models, but differs in the following ways:</p>
 <ol>
@@ -2051,7 +2051,7 @@ ________________________________________________________________________________
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Prediction-performance-of-Neural-Network-based-recommender-system">
-<a class="anchor" href="#Prediction-performance-of-Neural-Network-based-recommender-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prediction performance of Neural Network based recommender system<a class="anchor-link" href="#Prediction-performance-of-Neural-Network-based-recommender-system">¶</a>
+<a class="anchor" href="#Prediction-performance-of-Neural-Network-based-recommender-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prediction performance of Neural Network based recommender system<a class="anchor-link" href="#Prediction-performance-of-Neural-Network-based-recommender-system"> </a>
 </h4>
 </div>
 </div>
