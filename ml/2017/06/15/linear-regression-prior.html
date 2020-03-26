@@ -156,7 +156,13 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's say we have a prior on the linear model, i.e. we start with a known W (W_prior) and b (b_prior). Further, we say that the learnt function can be such that:</p>
-$$W = \alpha \times W_{prior} + \delta$$$$b = \beta + b_{prior} + \eta$$<p>Our task reduces to learn $\alpha$, $\beta$, $\delta$ and $\eta$. This can be solved as we would usually do using Gradient descent, the only difference being that we will compute the gradient wrt $\alpha$ , $\beta$, $\delta$, $\eta$. I will use autograd to compute the gradients.</p>
+<p>
+$$W = \alpha \times W_{prior} + \delta$$
+
+
+$$b = \beta + b_{prior} + \eta$$
+</p>
+<p>Our task reduces to learn $\alpha$, $\beta$, $\delta$ and $\eta$. This can be solved as we would usually do using Gradient descent, the only difference being that we will compute the gradient wrt $\alpha$ , $\beta$, $\delta$, $\eta$. I will use autograd to compute the gradients.</p>
 <p>In a typical model we might have 2 parameters (w and b). In our <code>refined</code> one, we have four- $\alpha$ , $\beta$, $\delta$, $\eta$.</p>
 
 </div>
@@ -195,7 +201,11 @@ $$W = \alpha \times W_{prior} + \delta$$$$b = \beta + b_{prior} + \eta$$<p>Our t
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="True-model">
 <a class="anchor" href="#True-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>True model<a class="anchor-link" href="#True-model"> </a>
-</h3>$$Y = 10 X + 6$$
+</h3>
+<p>
+$$Y = 10 X + 6$$
+</p>
+
 </div>
 </div>
 </div>

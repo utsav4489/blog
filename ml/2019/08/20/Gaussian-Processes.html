@@ -781,9 +781,13 @@ $$
 \end{pmatrix} \right)
 $$</p>
 <p>we have the marginal distribution of:
+
 $$X_1 \sim \mathcal{N}(\mu_1, a)$$
+
 and 
-$$X_2 \sim \mathcal{N}(\mu_2, b)$$</p>
+
+$$X_2 \sim \mathcal{N}(\mu_2, b)$$
+</p>
 
 </div>
 </div>
@@ -3782,7 +3786,9 @@ $$<p>Let us consider a case of noiseless GPs now</p>
 <a class="anchor" href="#Noiseless-GPs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Noiseless GPs<a class="anchor-link" href="#Noiseless-GPs"> </a>
 </h4>
 <p>Given train data 
-$$D = {(x_i, y_i), i = 1:N}$$</p>
+
+$$D = {(x_i, y_i), i = 1:N}$$
+</p>
 <p>Given a test set $X_{*}$ of size $N_* \times d $ containing $N_*$ points in ${\rm I\!R}^d$, we want to predict function outputs $y_{*}$</p>
 <p>We can write:</p>
 $$
@@ -4052,14 +4058,12 @@ $$
 p(y_*|X_*, X, y) \sim \mathcal{N}(\mu', \Sigma') \\
 K = LL^T \\
 $$<p>We are now going to use the <code>\</code> as follows:
-if $A\omega = B$, then $\omega$ = $B$ <code>\</code> $A$</p>
+if $A\omega = B$, then $\omega$ = $A$ <code>\</code> $B$</p>
 <p>We now have:
 $$
 \alpha = K^{-1}(x-\mu) \\
 or, \alpha = {LL^T}^{-1}(x-\mu) \\
 or, \alpha = L^{-T}L^{-1}(x-\mu) \\
-Let, K^{-1}(x-\mu) = \beta \\
-Thus, L^{-T}L^{-1}(x-\mu) = \beta \\
 Let, L^{-1}(x-\mu) = \gamma\\
 Thus, L\gamma = x-\mu \\
 Thus, \gamma = L \setminus (x-\mu)\\\
@@ -4085,7 +4089,9 @@ Thus, v^{T} = K_{*}^TL^{-T}\\
 Thus, v^{T}v = K_{*}^TL^{-T}L^{-1}K_{*}\\
 Thus, v^{T}v = K_*^TK^{-1}K_* = K_{**} - \Sigma' 
 $$</p>
-
+$$
+\Sigma' = K_{**} - v^{T}v
+$$
 </div>
 </div>
 </div>
@@ -4261,7 +4267,9 @@ $$</p>
 <a class="anchor" href="#Noisy-GPs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Noisy GPs<a class="anchor-link" href="#Noisy-GPs"> </a>
 </h3>
 <p>Previously, we had assumed a noiseless model, which is to say, for the observed data, we had:
-$$y_i = f(x_i)$$</p>
+
+$$y_i = f(x_i)$$
+</p>
 <p>We now make the model more flexible by saying that there can be noise in the observed data as well, thus:
 $$
 y_i = f(x_i) + \epsilon \\

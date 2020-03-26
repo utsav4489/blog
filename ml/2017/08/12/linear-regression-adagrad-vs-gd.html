@@ -175,8 +175,14 @@
 </blockquote>
 <p>As I'd done previously, I'll be using <a href="https:%20//github.com/HIPS/autograd">Autograd</a> to compute the gradients. Please note Autograd and not Adagrad!### Formulation ([borrowed from here])((<a href="http://ruder.io/optimizing-gradient-descent/">http://ruder.io/optimizing-gradient-descent/</a>)))</p>
 <p>In regular gradient descent, we would update the $i^{th}$ parameter in the $t+1^{th}$ iteration, given the learning rate $\eta$, where $g_{t, i}$ represents the gradient of the cost wrt $i^{th}$ param at time $t$.</p>
-$$ \theta_{t+1, i} = \theta_{t, i} - \eta \cdot g_{t, i}  \tag{Eq 1} $$<p>In Adagrad, we update as follows:</p>
-$$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \cdot g_{t, i} \tag{Eq 2}$$<p>Here,</p>
+<p>
+$$ \theta_{t+1, i} = \theta_{t, i} - \eta \cdot g_{t, i}  \tag{Eq 1} $$
+</p>
+<p>In Adagrad, we update as follows:</p>
+<p>
+$$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \cdot g_{t, i} \tag{Eq 2}$$
+</p>
+<p>Here,</p>
 <p>$G_{t} \in \mathbb{R}^{d \times d}$ is a diagonal matrix where each diagonal element $i, i$ is the sum of the squares of the gradients w.r.t. $\theta_i$ up to time step $t$ , while $\epsilon$ is a smoothing term that avoids division by zero (usually on the order of 1e−8).</p>
 
 </div>
@@ -216,7 +222,11 @@ $$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \c
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="True-model">
 <a class="anchor" href="#True-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>True model<a class="anchor-link" href="#True-model"> </a>
-</h3>$$Y = 10 X + 6$$
+</h3>
+<p>
+$$Y = 10 X + 6$$
+</p>
+
 </div>
 </div>
 </div>
@@ -291,7 +301,10 @@ $$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \c
 <a class="anchor" href="#Model-to-be-learnt" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model to be learnt<a class="anchor-link" href="#Model-to-be-learnt"> </a>
 </h3>
 <p>We want to learn <code>W</code> and <code>b</code> such that:</p>
+<p>
 $$Y = 10 W+ b$$
+</p>
+
 </div>
 </div>
 </div>

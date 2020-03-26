@@ -189,7 +189,10 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>General tensor factorisation for a 3d tensor A (M X N X O) would produce 3 factors- X (M X K), Y (N X K) and Z (O X K). The $A_{ijl}$ entry can be found as (Khatri product) :</p>
+<p>
 $$ A_{ijl} = \sum_k{X_{ik}Y_{jk}Z_{lk}}$$
+</p>
+
 </div>
 </div>
 </div>
@@ -222,7 +225,10 @@ $$ A_{ijl} = \sum_k{X_{ik}Y_{jk}Z_{lk}}$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The above figure shows the <strong>latent factor for X ($X_{M}$) corresponding to the $M^{th}$ entry of X that we wish to learn</strong>. On the LHS, we see the matrix corresponding to $A_{M}$. The highlighted entry of $A_{M}$ is created by element-wise multiplication of $X_M, Y_0, Z_0$ and then summing. Thus, each of the N X O entries of $A_M$ are created by multiplying $X_M$ with a row from Y and a row from Z. In general,</p>
+<p>
 $$A_{M, n, o}  = \sum_k{X_{M, k} \times Y_{n, k} \times Z_{o, k}}$$
+</p>
+
 </div>
 </div>
 </div>
@@ -235,7 +241,10 @@ $$A_{M, n, o}  = \sum_k{X_{M, k} \times Y_{n, k} \times Z_{o, k}}$$
 <li>We create a matrix by element-wise multiplication of each row of Y with each row of Z to create $\alpha$ of shape (N X O, K)</li>
 </ol>
 <p>We can now write,</p>
-$$ \alpha X_M^T \approx \beta $$<p>Thus, X_M^T = Least Squares ($\alpha, \beta$)</p>
+<p>
+$$ \alpha X_M^T \approx \beta $$
+
+Thus, X_M^T = Least Squares ($\alpha, \beta$)</p>
 <p>Ofcourse, $\beta$ can have missing entries, which we mask out. Thus, we can write:</p>
 <p>$X_M^T$ = Least Squares ($\alpha [Mask], \beta [Mask]$)</p>
 <p>In case we're doing a non-negative tensor factorisation, we can instead learn $X_M^T$ as follows:

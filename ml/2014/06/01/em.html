@@ -203,7 +203,10 @@
 </blockquote>
 <p>When $n$ such trials are performed, it is called a binomial experiment. In the case of the coin toss experiment, if we have: <em> $n$ coin toss</em> $p$ probability of head in each trial -&gt; $1-p$ probability of head in each throw
 then we observe $k$ heads as per the following:</p>
-$${n\choose{k}} p^k(1-p)^{n-k}$$<p>Let us write some code to see how this function varies. We fix $n$=10 and for varying $p$ and observe how the probability distirbution(pmf) varies.</p>
+<p>
+$${n\choose{k}} p^k(1-p)^{n-k}$$
+</p>
+<p>Let us write some code to see how this function varies. We fix $n$=10 and for varying $p$ and observe how the probability distirbution(pmf) varies.</p>
 
 </div>
 </div>
@@ -386,15 +389,23 @@ $${n\choose{k}} p^k(1-p)^{n-k}$$<p>Let us write some code to see how this functi
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If we choose the probability of heads to be $p$, the likelihood (probability) of obtaining $x$ heads in $n$ throws in our data $D $ is:
+
 $$L(D|\theta) \propto p^x(1-p)^{n-x}$$
+
 If we differentiate this term wrt $p$ and equate to 0, we get:
+
 $$ xp^{x-1}(1-p)^{n-x} - p^x (n-x)(1-p)^{n-x-1} = 0$$
+
 or $$ p^{x-1}(1-p)^{n-x-1}[x(1-p) - p(n-x)]= 0$$
 or $$ x - xp - pn + xp = 0$$
 or $$ p = \frac{x}{n}$$</p>
 <p>This also generalizes over when multiple sets of throws are done. Thus, in the figure shown above, we find the probability of head for coins A and coins B, given the data, as :
+
 $$ P (A=head|D) = \frac{\mathrm{heads~observed~when~A~was~thrown}}{\mathrm{times~A~was~thrown}}$$
+
+
 $$ = \frac{24}{24+6} = 0.8$$
+
 Similarly, for coin B, we can find this ratio as 0.45.</p>
 
 </div>
@@ -693,7 +704,13 @@ It turns out that we can use the EM algorithm for this task. I would recommend r
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\theta_A^0 = 0.6$$$$\theta_B^0 = 0.5$$
+<p>
+$$\theta_A^0 = 0.6$$
+
+
+$$\theta_B^0 = 0.5$$
+</p>
+
 </div>
 </div>
 </div>
